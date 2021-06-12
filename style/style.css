@@ -1,0 +1,39 @@
+body { font-family: "Marcellus"; font-size: 9pt; }
+
+:matches( .front, .back) h1 { font-family: "Mountains of Christmas"; font-size: 13pt; text-align: center; margin: 0; }
+
+header { display: none; }
+
+p { margin: 0; }
+
+@page { padding: 1in; }
+
+.front, .back 
+{ margin-left: auto; margin-right: auto;
+  padding: 0.125in 0.25in;
+  width: 3.0in; /* 3.5 - 0.25 * 2 */
+  height: 2.00in; /* 2.25 - 0.125 * 2 */
+  overflow: clip;
+  margin-bottom: 1in;
+  border: 1pt dashed black;
+}
+
+.setup p { padding: 1pt 3pt; border: 0.5pt solid black; margin-top: 3pt; margin-bottom: 3pt; }
+.stats { margin-top: 3pt; margin-bottom: 3pt; }
+
+.stats p { margin-bottom: 2pt; }
+/* 
+.stats ul { margin-left: 0; display: inline; }
+.stats li { margin-left: 0; list-style-type: none; display: inline-block; margin-right: 1ch; font-weight: bold; }
+.stats li:after { content: ','; }
+.stats li:last-child:after { content: ''; }
+*/
+.stats ul { margin: 0; margin-left: 5pt; }
+.stats li { margin-left: 0; list-style-type: none; }
+.stats li:before { display: inline-block; margin-right: 0.5em; font-family: 'Font Awesome 5 Free Regular'; content: '\f0c8\f0c8\f0c8\f0c8\f0c8'; letter-spacing: 0.5em; }
+
+.blurb { font-style: italic; display: inline-block; width: 100%; text-align: center; margin-bottom: 3pt; }
+
+.back ul { margin-left: 1em; }
+.back li { margin-left: 1em; }
+
